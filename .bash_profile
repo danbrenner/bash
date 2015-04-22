@@ -5,8 +5,10 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # history
-HISTFILESIZE=1000000000
-HISTSIZE=1000000
+export HISTFILESIZE=1000000000 # more history
+export HISTSIZE=1000000 # more history
+export HISTTIMEFORMAT='%F %T ' # timestamps
+export HISTCONTROL=ignoredups # ignore duplicates in history
 
 # aliases
 alias app="open -a"
