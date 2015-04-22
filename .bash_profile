@@ -4,6 +4,10 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# history
+HISTFILESIZE=1000000000
+HISTSIZE=1000000
+
 # aliases
 alias app="open -a"
 alias freespace="df -h"
