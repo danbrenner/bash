@@ -12,6 +12,7 @@ export HISTCONTROL=ignoredups # ignore duplicates in history
 
 # aliases
 alias app="open -a"
+alias bbe="open -a BBEdit $1"
 alias freespace="df -h"
 alias lh="ls -lah"
 alias sx="screen -x"
