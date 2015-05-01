@@ -31,6 +31,7 @@ $labels = array(
 	'status:designreview' => '006600',
 	'status:development'  => '009800',
 	'status:featuredoc'   => '66cc66',
+	'status:new'          => 'ffb4d9',
 	'status:reintegrated' => '0000ff',
 	'status:testing'      => '3dcc3d',
 	'type:bug'            => 'cccccc',
