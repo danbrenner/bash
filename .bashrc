@@ -19,6 +19,9 @@ alias lh="ls -lah"
 alias sx="screen -x"
 alias sls="screen -ls"
 
+# ssh aliases
+alias s_server="ssh -i ~/.ssh/id_rsa_IDENTITY username@server.com"
+
 # make less use colors
 alias less='less -R'
 
