@@ -10,7 +10,7 @@ export HISTSIZE=1000000 # more history
 export HISTTIMEFORMAT='%F %T ' # timestamps
 export HISTCONTROL=ignoredups # ignore duplicates in history
 
-# aliases
+# command aliases
 alias app="open -a"
 alias finder="open -a Finder $1"
 alias bbe="open -a BBEdit $1"
