@@ -22,6 +22,10 @@ alias sls="screen -ls"
 # ssh aliases
 alias s_server="ssh -i ~/.ssh/id_rsa_IDENTITY username@server.com"
 
+# sounds
+alias horn="afplay ~/Dropbox/sound\ effects/air_horn.wav"
+alias laser="afplay ~/Dropbox/sound\ effects/laser_shots.mp3"
+
 # make less use colors
 alias less='less -R'
 
