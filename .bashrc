@@ -18,6 +18,7 @@ alias freespace="df -h"
 alias lh="ls -lah"
 alias sx="screen -x"
 alias sls="screen -ls"
+alias c="clear"
 
 # ssh aliases
 alias s_server="ssh -i ~/.ssh/id_rsa_IDENTITY username@server.com"
