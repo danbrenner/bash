@@ -1,2 +1,2 @@
 # Find all utm_* variables in a URL:
-/(utm_[a-z0-9]+=[^&]+)/gi
+/(utm_[-_a-z0-9]+=[^&]+)/gi
