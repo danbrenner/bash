@@ -1,0 +1,6 @@
+# Common Git commands (because they're all too goddamn verbose to remember)
+
+# Stop tracking local files with sensitive info, even if they exist in remote repo
+git update-index --assume-unchanged <file>
+# Start tracking them once again
+git update-index --no-assume-unchanged <file>
