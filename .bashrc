@@ -1,5 +1,8 @@
 # ~/.bashrc
 
+# disable mapping of ^s to flow control so forward-i-search works as easily as reverse-i-search (^r)
+stty -ixon
+
 # colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
