@@ -1,2 +1,2 @@
 # update public IP in Dropbox every 5 minutes
-*/5 * * * * /usr/bin/curl -s http://icanhazip.com/ > ~/Dropbox/ip_work.txt
+*/5 * * * * /usr/bin/curl -s http://icanhazip.com/ > ~/Dropbox/ip_home.txt
