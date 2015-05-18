@@ -1,5 +1,5 @@
 <?php
-// Script to populate GitHub labels for repositories
+// Script to populate GitHub issue labels for repositories
 // OG source: https://wpxtre.me/blog/tips/standardize-issue-labels-between-your-github-repos/
 
 // GitHub credentials
