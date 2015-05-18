@@ -14,7 +14,7 @@ crontab -e
 Common Git commands (because they're all too goddamn verbose to remember)
 
 ## github_labels.php
-Script to populate GitHub labels for repositories
+Script to populate GitHub issue labels for repositories
 
 ## regex.txt
 Useful RegEx patterns
