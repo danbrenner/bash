@@ -33,6 +33,7 @@ alias home="open vnc://$(cat ~/Dropbox/ip_home.txt)"
 alias horn="afplay ~/Dropbox/sound\ effects/air_horn.wav >/dev/null 2>&1 </dev/null &"
 alias laser="afplay ~/Dropbox/sound\ effects/laser_shots.mp3 >/dev/null 2>&1 </dev/null &"
 alias sonar="afplay ~/Dropbox/sound\ effects/dub_sonar.wav >/dev/null 2>&1 </dev/null &"
+alias roar="afplay ~/Dropbox/sound\ effects/lion.mp3 >/dev/null 2>&1 </dev/null &"
 
 # make less use colors
 alias less='less -R'
