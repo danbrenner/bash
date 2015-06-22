@@ -3,9 +3,14 @@
 # disable mapping of ^s to flow control so forward-i-search works as easily as reverse-i-search (^r)
 stty -ixon
 
+# prompt
+export PS1='\u@\h: [\W]\$ '
+
 # colors
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export LSCOLORS='geehcxdxbxfxexabhbacgc'
+export LS_COLORS='di=36;44:ln=34;47:so=32;40:pi=33;40:ex=31;40:bd=35;40:cd=34;40:su=0;41:sg=37;41:tw=0;42:ow=36;42:'
+export GREP_OPTIONS='--color=auto'
 
 # history
 export HISTFILESIZE=1000000000 # more history
