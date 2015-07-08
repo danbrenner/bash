@@ -1,0 +1,4 @@
+# Useful rsync commands
+
+# rsync in archive mode, preserving permissions and timestamps and allow resuming partial files, via SSH
+rsync -avzPe ssh user@source_server:/path/to/source/ user@destination_server:/path/to/destination/
