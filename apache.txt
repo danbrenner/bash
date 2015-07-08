@@ -1,0 +1,34 @@
+# Common Apache configurations
+
+# Dev environment with user and project subdomains like project.username.domain.com
+<VirtualHost *:80>
+	# Point any subdomain to dir in homedir
+	#UseCanonicalName Off (this may be needed in some cases)
+	VirtualDocumentRoot /home/<USERNAME>/%1/
+	ServerName <USERNAME>.dev.<DOMAIN>.com
+	ServerAlias *.<USERNAME>.dev.<DOMAIN>.com
+	CustomLog "/home/<USERNAME>/logs/access_log" combined
+	ErrorLog /home/<USERNAME>/logs/error_log
+	SetEnv SERVER_MODE development
+	<Directory /home/<USERNAME>/*>
+		AllowOverride All
+		Satisfy Any
+		Options Indexes Includes FollowSymLinks ExecCGI MultiViews
+		Require all granted
+	</Directory>
+</VirtualHost>
+<VirtualHost *:80>
+	# Point plain user domain to trunk
+	DocumentRoot /home/<USERNAME>/trunk/
+	ServerName <USERNAME>.dev.<DOMAIN>.com
+	ServerAlias <USERNAME>.dev.<DOMAIN>.com
+	CustomLog "/home/<USERNAME>/logs/access_log" combined
+	ErrorLog /home/<USERNAME>/logs/error_log
+	SetEnv SERVER_MODE development
+	<Directory /home/<USERNAME>/trunk>
+		AllowOverride All
+		Satisfy Any
+		Options Indexes Includes FollowSymLinks ExecCGI MultiViews
+		Require all granted
+	</Directory>
+</VirtualHost>
