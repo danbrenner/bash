@@ -1,4 +1,4 @@
-// Common PHP actions
+// Common PHP snippets
 
 // Display all errors, no matter what
 ini_set('display_errors',1);
