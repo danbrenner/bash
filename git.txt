@@ -4,3 +4,6 @@
 git update-index --assume-unchanged <file>
 # Start tracking them once again
 git update-index --no-assume-unchanged <file>
+
+# Delete remote branch
+git push origin --delete <branchName>
