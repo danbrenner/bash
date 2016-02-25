@@ -1,8 +1,10 @@
+# ----------------------- LOCAL DESKTOP ENTRIES -----------------------
 # Update public IP in Dropbox every 5 minutes
 */5 * * * * /usr/bin/curl -s http://icanhazip.com/ > ~/Dropbox/ip_home.txt
 
 # Import sanitized music to permanent collection every night at 3:30am
 30 3 * * * rsync -r --exclude=.DS_Store ~/Dropbox/Music\ Review/_sanitized/ /Volumes/Archive/permanent\ collection/tagged\ downloads && mv ~/Dropbox/Music\ Review/_sanitized/* ~/.Trash/
 
+# ----------------------- REMOTE SERVER ENTRIES -----------------------
 # Make sure ZNC is running (every 10 minutes) - new copies won't be spawned if it already is:
 */10 * * * *   /usr/local/bin/znc >/dev/null 2>&1
