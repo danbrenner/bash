@@ -1,4 +1,8 @@
 # Useful rsync commands
 
-# rsync in archive mode, preserving permissions and timestamps and allow resuming partial files, via SSH
+# rsync via SSH in archive mode, preserving permissions and timestamps and allow resuming partial files
 rsync -avzPe ssh user@source_server:/path/to/source/ user@destination_server:/path/to/destination/
+
+# rsync a file in place (no temporary file) via SSH, allowing partial resume and showing progress
+# (this is very useful for "streaming" a movie without having to wait for the entire download)
+rsync -P -e --inplace ssh user@source_server:/path/to/source/ user@destination_server:/path/to/destination/
