@@ -10,6 +10,9 @@ Random utilities and helpful config files
 ## apache.txt
 Common Apache configurations
 
+## ascii.txt
+Fun ASCII drawings
+
 ## crontab
 crontab -e
 
