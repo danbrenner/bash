@@ -19,14 +19,15 @@ export HISTTIMEFORMAT='%F %T ' # timestamps
 export HISTCONTROL=ignoredups # ignore duplicates in history
 
 # command aliases
-alias app="open -a"
-alias finder="open -a Finder $1"
-alias bbe="open -a BBEdit $1"
-alias freespace="df -h"
-alias lh="ls -lah"
-alias sx="screen -x"
-alias sls="screen -ls"
-alias c="clear"
+alias app="open -a" # open file
+alias finder="open -a Finder $1" # open specified directory with Finder
+alias bbe="open -a BBEdit $1" # open specified file with BBEdit
+alias freespace="df -h" # show available disk space
+alias lh="ls -lah" # directory listing of all items in human-readable format
+alias sx="screen -x" # attach to screen session
+alias sls="screen -ls" # list screen sessions
+alias c="clear" # clear display
+alias vi="vim" # make vi load vim
 
 # ssh aliases
 alias s_server="ssh -i ~/.ssh/id_rsa_IDENTITY username@server.com"
