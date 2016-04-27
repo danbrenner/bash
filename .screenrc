@@ -1,0 +1,3 @@
+# ~/.screenrc
+
+shell -$SHELL # make sure screen uses a login shell
