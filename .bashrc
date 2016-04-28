@@ -57,6 +57,3 @@ sn() {
 	screen -S $1 -d -m -t shell bash;
 	screen -x $1;
 }
-
-# actions
-refressh # refresh stale ssh sockets
