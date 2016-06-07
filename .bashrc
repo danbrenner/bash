@@ -6,6 +6,9 @@ stty -ixon
 # prompt
 export PS1='\u@\h: [\W]\$ '
 
+# editor
+export EDITOR=vim
+
 # colors
 export CLICOLOR=1
 export LSCOLORS='geehcxdxbxfxexabhbacgc'
