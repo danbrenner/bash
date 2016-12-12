@@ -31,7 +31,7 @@ alias sx="screen -x" # attach to screen session
 alias sls="screen -ls" # list screen sessions
 alias c="clear" # clear display
 alias vi="vim" # make vi load vim
-alias refressh="export SSH_AUTH_SOCK=$(find /tmp -maxdepth 2 -type s -name "agent*" -user $USER -printf '%T@ %p\n' 2>/dev/null |sort -n|tail -1|cut -d' ' -f2)" # refresh stale ssh sockets
+alias refressh="export SSH_AUTH_SOCK=$(find /tmp -maxdepth 2 -type s -name "agent*" -user $USER -printf '%T@ %p\n' 2>/dev/null |sort -n|tail -1|cut -d' ' -f2)" # refresh stale ssh sockets, "exec bash" before using this command
 
 # ssh aliases
 alias s_server="ssh -i ~/.ssh/id_rsa_IDENTITY username@server.com"
