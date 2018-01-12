@@ -1,6 +1,7 @@
 # Useful grep commands
 
-# tail logfile.log continuously, pipe its output to ggrep (basically PCRE grep for OS X) 
+# tail logfile.log continuously (-F forces it to follow the filename instead of the object, 
+# which helps against pesky log rotation), then pipe its output to ggrep (PCRE grep for OS X)
 # with options (P = PCRE mode, o = only return match, a = process even binary data as text),
 # and match any continuous numeric value that's in between the _BORDER_ patterns...
 # this is useful for targeting IDs line by line in logs to trigger some action.
