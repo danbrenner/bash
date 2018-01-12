@@ -1,0 +1,7 @@
+# Useful grep commands
+
+# tail logfile.log continuously, pipe its output to ggrep (basically PCRE grep for OS X) 
+# with options (P = PCRE mode, o = only return match, a = process even binary data as text),
+# and match any continuous numeric value that's in between the _BORDER_ patterns...
+# this is useful for targeting IDs line by line in logs to trigger some action.
+tail -F logfile.log | ggrep -Poa '_LEFT_BORDER_PATTERN_\K\d+(?=_RIGHT_BORDER_PATTERN_)'
