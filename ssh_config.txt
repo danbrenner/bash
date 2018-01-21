@@ -1,0 +1,4 @@
+# Disable use of passwords (allow only SSH keys)
+PasswordAuthentication no
+PubkeyAuthentication yes
+ChallengeResponseAuthentication no
