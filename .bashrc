@@ -31,13 +31,13 @@ alias sx="screen -x" # attach to screen session
 alias sls="screen -ls" # list screen sessions
 alias c="clear" # clear display
 alias vi="vim" # make vi load vim
-alias refressh="export SSH_AUTH_SOCK=$(find /tmp -maxdepth 2 -type s -name "agent*" -user $USER -printf '%T@ %p\n' 2>/dev/null |sort -n|tail -1|cut -d' ' -f2)" # refresh stale ssh sockets, "exec bash" before using this command
+alias refressh="export SSH_AUTH_SOCK=$(find /tmp -maxdepth 2 -type s -name "agent*" -user $USER -printf '%T@ %p\n' 2>/dev/null |sort -n|tail -1|cut -d' ' -f2)" # refresh stale ssh sockets (useful when using git in screen), "exec bash" before using this command
 
 # ssh aliases
-alias s_server="ssh -i ~/.ssh/id_rsa_IDENTITY username@server.com"
+alias s_server="ssh -i ~/.ssh/id_rsa_{IDENTITY} username@server.com"
 
-# vnc aliases
-alias home="open vnc://$(cat ~/Dropbox/ip_home.txt)"
+# vnc (via ssh tunnel) aliases
+alias home="ssh -f -p {SSH_PORT} -i ~/.ssh/id_rsa_{IDENTITY} -L {LOCAL_VNC_PORT_TO_MAP}:localhost:{REMOTE_VNC_PORT} username@$(cat ~/Dropbox/ip_home.txt) sleep 10; open vnc://localhost:{LOCAL_VNC_PORT_TO_MAP}"
 
 # sounds
 alias horn="afplay ~/Dropbox/sound\ effects/air_horn.wav >/dev/null 2>&1 </dev/null &"
