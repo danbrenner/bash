@@ -37,7 +37,7 @@ alias refressh="export SSH_AUTH_SOCK=$(find /tmp -maxdepth 2 -type s -name "agen
 alias s_server="ssh -i ~/.ssh/id_rsa_{IDENTITY} username@server.com"
 
 # vnc (via ssh tunnel) aliases
-alias home="ssh -f -p {SSH_PORT} -i ~/.ssh/id_rsa_{IDENTITY} -L {LOCAL_VNC_PORT_TO_MAP}:localhost:{REMOTE_VNC_PORT} username@$(cat ~/Dropbox/ip_home.txt) sleep 10; open vnc://localhost:{LOCAL_VNC_PORT_TO_MAP}"
+alias v_server="ssh -f -p {SSH_PORT} -i ~/.ssh/id_rsa_{IDENTITY} -L {LOCAL_VNC_PORT_TO_MAP}:localhost:{REMOTE_VNC_PORT} username@$(cat ~/Dropbox/ip_home.txt) sleep 10; open vnc://username@localhost:{LOCAL_VNC_PORT_TO_MAP}"
 
 # sounds
 alias horn="afplay ~/Dropbox/sound\ effects/air_horn.wav >/dev/null 2>&1 </dev/null &"
