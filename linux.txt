@@ -1,4 +1,4 @@
-# Useful grep commands
+# Useful Linux commands
 
 # tail logfile.log continuously (-F forces it to follow the filename instead of the object, 
 # which helps against pesky log rotation), then pipe its output to ggrep (PCRE grep for OS X)
@@ -6,3 +6,6 @@
 # and match any continuous numeric value that's in between the _BORDER_ patterns...
 # this is useful for targeting IDs line by line in logs to trigger some action.
 tail -F logfile.log | ggrep -Poa '_LEFT_BORDER_PATTERN_\K\d+(?=_RIGHT_BORDER_PATTERN_)'
+
+# Search between 2 and 12 subdirectories deep in current directory and consolidate all files to ~/temp/ in one flat structure
+find . -mindepth 2 -maxdepth 12 -type f -exec cp '{}' ~/temp/ ';'
